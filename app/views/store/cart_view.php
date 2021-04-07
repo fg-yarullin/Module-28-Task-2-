@@ -27,7 +27,7 @@
                         <td class="text-center"><?=$product['quantity']?></td>
                         <td class="text-center">
                             <input class="text-center ml-2" style="width:50px" 
-                                type="number" min="0" name="parts[<?=$key?>]" value="1">
+                                type="number" min="0" max="<?=$product['quantity']?>" name="parts[<?=$key?>]" value="1">
                         </td>
                     </tr>
                 <?php endforeach ?>
